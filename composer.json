@@ -1,0 +1,27 @@
+{
+    "name": "ggss/upload",
+    "description": "This is the upload component",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Ggss\\Upload\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ggss cloud upload",
+            "email": "317201583@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "alibabacloud/sdk": "^1.8"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ggss\\Upload\\UploadProvider"
+            ]
+        }
+    }
+}
