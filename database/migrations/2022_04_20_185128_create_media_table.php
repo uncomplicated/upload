@@ -17,6 +17,7 @@ class CreateMediaTable extends Migration
             $table->id();
             $table->string('video_id',16)->nullable()->comment('阿里云点播id');
             $table->string('name',64)->comment('名称');
+            $table->string('conversions_disk',32)->nullable()->comment('驱动');
             $table->string('mime_type',32)->comment('类型');
             $table->string('path',255)->nullable()->comment('图片地址');
             $table->integer('size')->default(0)->comment('大小');

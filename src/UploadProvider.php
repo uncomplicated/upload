@@ -49,8 +49,11 @@ class UploadProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__.'/../database/migrations' => database_path('migrations'),
-            ], 'video-migrations');
+            ], 'upload-migrations');
 
+            $this->publishes([
+                __DIR__.'/../config' => config_path('media.php'),
+            ], 'upload-config');
         }
     }
 

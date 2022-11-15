@@ -15,7 +15,8 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "alibabacloud/sdk": "^1.8"
+        "alibabacloud/sdk": "^1.8",
+        "alphasnow/aliyun-oss-laravel": "^3.3"
     },
     "extra": {
         "laravel": {
