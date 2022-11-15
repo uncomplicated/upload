@@ -25,6 +25,7 @@ class UploadProvider extends ServiceProvider
     {
         $this->registerPublishing();
         $this->registerMigrations();
+        $this->registerRoutes();
     }
 
     /**
@@ -39,6 +40,10 @@ class UploadProvider extends ServiceProvider
         }
     }
 
+    private function registerRoutes()
+    {
+        $this->loadRoutesFrom(__DIR__.'/routes.php');
+    }
     /**
      * Register the package's publishable resources.
      *

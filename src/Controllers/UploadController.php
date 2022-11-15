@@ -60,4 +60,46 @@ class UploadController extends Controller
              'data' => $model
          ];
      }
+
+    /**
+     *  视频上传凭证
+     */
+    public function getUploadInit(Request $request)
+    {
+        try{
+            // 获取上传的文件
+            $fileName = $request->input('filename');
+            $type = $request->input('type');
+            $result = AliVodService::createUploadVideo($fileName,$type);
+            return [
+                'code' => 200,
+                'data' => $result
+            ];
+        }catch (\Throwable $e){
+            return [
+                'code' => 400,
+                'message' => '获取上传凭证失败',
+            ];
+        }
+    }
+    /**
+     * 视频刷新凭证
+     */
+    public function refreshUrl(Request $request)
+    {
+        try{
+            // 获取上传的文件
+            $videoId = $request->input('videoId');
+            $result = AliVodService::refreshUploadVideo($videoId);
+            return [
+                'code' => 200,
+                'data' => $result
+            ];
+        }catch (\Throwable $e){
+            return [
+                'code' => 400,
+                'message' => '获取刷新凭证失败',
+            ];
+        }
+    }
 }
