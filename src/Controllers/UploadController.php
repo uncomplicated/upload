@@ -1,11 +1,11 @@
 <?php
 
-namespace ggss\upload\controllers;
+namespace Ggss\Upload\Controllers;
 
 
 use App\Http\Controllers\Controller;
-use Ggss\upload\Generator\Image;
-use Ggss\upload\Generator\Video;
+use Ggss\Upload\Generator\Image;
+use Ggss\Upload\Generator\Video;
 use Ggss\Upload\Services\AliVodService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;

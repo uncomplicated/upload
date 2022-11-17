@@ -1,6 +1,6 @@
 <?php
 
-namespace Ggss\upload\Generator;
+namespace Ggss\Upload\Generator;
 
 
 class Image extends Generator

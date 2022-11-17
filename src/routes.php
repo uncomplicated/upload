@@ -1,6 +1,6 @@
 <?php
 
-use ggss\upload\controllers\UploadController;
+use Ggss\Upload\Controllers\UploadController;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Route;
 Route::group([

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ggss\upload\Exceptions;
+namespace Ggss\Upload\Exceptions;
 
 use Exception;
 

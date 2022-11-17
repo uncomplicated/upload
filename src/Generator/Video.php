@@ -1,6 +1,6 @@
 <?php
 
-namespace Ggss\upload\Generator;
+namespace Ggss\Upload\Generator;
 
 
 use Ggss\Upload\Services\AliVodService;

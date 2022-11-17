@@ -1,8 +1,8 @@
 <?php
 
-namespace Ggss\upload\Generator;
+namespace Ggss\Upload\Generator;
 
-use Ggss\upload\Exceptions\DatabaseException;
+use Ggss\Upload\Exceptions\DatabaseException;
 use Ggss\Upload\Models\Media;
 use Illuminate\Http\UploadedFile;
 abstract class Generator
